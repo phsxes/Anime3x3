@@ -1,24 +1,15 @@
-# README
+# Anime 3x3
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A website that helps you create anime 3x3 grids using the MyAnimeList API.
 
-Things you may want to cover:
+Things to document:
 
 * Ruby version
-
 * System dependencies
-
 * Configuration
-
 * Database creation
-
 * Database initialization
-
 * How to run the test suite
-
 * Services (job queues, cache servers, search engines, etc.)
-
 * Deployment instructions
-
 * ...
