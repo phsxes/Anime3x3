@@ -1,0 +1,14 @@
+<div class="d-flex align-items-center justify-content-center mt-3">
+	<h1>Anime 3x3 Generator</h1>
+</div>
+
+<div class="container mt-3">
+	<%= form_with url: "search", method: :post do |form| %>
+	<div class="mb-3">
+		<%= form.text_field :name , class: "form-control" %>
+	</div>
+	<div>
+		<%= form.submit "Search", class: "btn btn-primary"%>
+	</div>
+	<% end  %>
+</div>
