@@ -2,5 +2,5 @@
 
 Rails.application.routes.draw do
   root to: "main#index"
-  post 'search', to: 'search#find'
+  get 'search', to: 'search#find'
 end

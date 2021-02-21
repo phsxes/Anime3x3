@@ -10,11 +10,15 @@ class SearchController < ApplicationController
         http.use_ssl = true
         http.verify_mode = OpenSSL::SSL::VERIFY_NONE
         request = Net::HTTP::Get.new(url)
-        request["x-rapidapi-key"] = # KEY
-        request["x-rapidapi-host"] = # HOST
+        request["x-rapidapi-key"] = ## KEY GOES HERE
+        request["x-rapidapi-host"] = 'jikan1.p.rapidapi.com'
         response = http.request(request)
         parsed_json = JSON.parse(response.body)
-        @image_link = parsed_json['results'][0]['image_url']
-        render inline: "<%= image_tag @image_link %>"
+        @results = parsed_json['results']
+        respond_to do |format|
+            format.js
+        end
+
+        # render inline: "<%= image_tag @image_link %>"
     end
 end
