@@ -1,18 +1,18 @@
-<div class="d-flex align-items-center justify-content-center mt-3 title is-1">
-	<h1>Anime 3x3 Generator</h1>
+<div class="d-flex align-items-center justify-content-center title is-1">
+	<p class="title is-1 has-text-white">Anime 3x3 Generator</p>
 </div>
 
 <div class="container mt-3">
 	<%= form_with url: "search", method: :get, local: false do |form| %>
 	<div class="mb-3">
-		<%= form.text_field :name , class: "input is-primary" %>
+		<%= form.text_field :name , class: "input has-background-grey-dark" %>
 	</div>
 	<div class="mb-3">
 		<%= form.submit "Search", class: "button is-primary"%>
 	</div>
 	<% end  %>
 
-	<div class="columns is-mobile" id="results">
+	<div class="columns is-desktop" id="results">
 
 	</div>
 </div>

@@ -3,15 +3,15 @@
         <% for j in (0..1) %>
             <% puts @results[i+j]['synopsis'] %>
             <% puts %>
-            <div class="card mb-3">
+            <div class="card mb-3 has-background-grey-dark">
                 <div class="card-image">
-                    <figure class="image is-128x171">
+                    <figure class="image is-3by4">
                         <%= image_tag @results[i+j]['image_url']%>
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div class="content">
-                        <h1><%= @results[i+j]['title'] %></h1>
+                    <div class="content ellipsis is-ellipsis-1 is-black-blis">
+                        <p class="title is-4 has-text-white"><%= @results[i+j]['title'] %></p>
                         <b>Score: </b><%= @results[i+j]['score'] %>
                     </div>
                 </div>

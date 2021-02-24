@@ -21,8 +21,8 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'myanimelist_client'
-# MyAnimeList gem, from https://github.com/Oli4242/myanimelist_client
+gem 'jikan.rb'
+# Jikan Ruby Wrapper, from https://github.com/Zerocchi/jikan.rb
 gem "bulma-rails", "~> 0.8.0"
 # BULMA gem
 

@@ -1,2 +1,14 @@
 @import '_layout';
+
+$blue: #72d0eb;
+$pink: #ffb3b3;
+$pink-invert: #fff;
+$primary: #45a29e;
+$primary-invert: $pink-invert;
+
+html, body{
+    background-color: #363636;
+    height: 100%;
+}
+
 @import 'bulma/bulma';
