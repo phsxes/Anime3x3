@@ -11,7 +11,7 @@ class SearchController < ApplicationController
         http.use_ssl = true
         http.verify_mode = OpenSSL::SSL::VERIFY_NONE
         request = Net::HTTP::Get.new(url)
-        request["x-rapidapi-key"] = ## API KEY HERE
+        request["x-rapidapi-key"] = Rails.application.credentials.jikan[:api_key] # API KEY HERE
         request["x-rapidapi-host"] = 'jikan1.p.rapidapi.com'
         response = http.request(request)
         parsed_json = JSON.parse(response.body)
@@ -19,7 +19,5 @@ class SearchController < ApplicationController
         respond_to do |format|
             format.js
         end
-
-        # render inline: "<%= image_tag @image_link %>"
     end
 end

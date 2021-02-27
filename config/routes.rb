@@ -3,4 +3,5 @@
 Rails.application.routes.draw do
   root to: "main#index"
   get 'search', to: 'search#find'
+  get 'select', to: 'main#select'
 end

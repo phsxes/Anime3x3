@@ -1,12 +1,12 @@
 <% for i in (0..9).step(2)%>
     <div class="column">
         <% for j in (0..1) %>
-            <% puts @results[i+j]['synopsis'] %>
-            <% puts %>
             <div class="card mb-3 has-background-grey-dark">
                 <div class="card-image">
                     <figure class="image is-3by4">
-                        <%= image_tag @results[i+j]['image_url']%>
+                        <%= link_to select_path, remote: true do %>
+                            <%= image_tag @results[i+j]['image_url']%>
+                        <% end %>
                     </figure>
                 </div>
                 <div class="card-content">
