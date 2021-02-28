@@ -1,21 +1,23 @@
-<% for i in (0..9).step(2)%>
-    <div class="column">
-        <% for j in (0..1) %>
-            <div class="card mb-3 has-background-grey-dark">
-                <div class="card-image">
-                    <figure class="image is-3by4">
-                        <%= link_to select_path, remote: true do %>
-                            <%= image_tag @results[i+j]['image_url']%>
-                        <% end %>
-                    </figure>
-                </div>
-                <div class="card-content">
-                    <div class="content ellipsis is-ellipsis-1 is-black-blis">
-                        <p class="title is-4 has-text-white"><%= @results[i+j]['title'] %></p>
-                        <b>Score: </b><%= @results[i+j]['score'] %>
+<div class="columns is-desktop" id="temps">
+    <% for i in (0..9).step(2)%>
+        <div class="column">
+            <% for j in (0..1) %>
+                <div class="card mb-3 has-background-grey-dark">
+                    <div class="card-image">
+                        <figure class="image is-3by4">
+                            <%= link_to select_path, remote: true do %>
+                                <%= image_tag @results[i+j]['image_url']%>
+                            <% end %>
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="content ellipsis is-ellipsis-1 is-black-blis">
+                            <p class="title is-4 has-text-white"><%= @results[i+j]['title'] %></p>
+                            <b>Score: </b><%= @results[i+j]['score'] %>
+                        </div>
                     </div>
                 </div>
-            </div>
-        <% end %>
-    </div>
-<% end %>
+            <% end %>
+        </div>
+    <% end %>
+</div>
