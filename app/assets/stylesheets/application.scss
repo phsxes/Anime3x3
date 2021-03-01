@@ -39,3 +39,31 @@
     overflow: hidden;
     text-overflow: ellipsis;  
   }
+  
+  .fill {
+    background-image: url('https://cdn.myanimelist.net/images/anime/13/17405.jpg?s=59241469eb470604a792add6fbe7cce6');
+    position: relative;
+    height: 150px;
+    width: 150px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+  }
+  
+  .hold {
+    border: solid 5px #ccc;
+  }
+  
+  .empty {
+    display: inline-block;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    background: white;
+  }
+  
+  .hovered {
+    background: #f4f4f4;
+    border-style: dashed;
+  }
+  
